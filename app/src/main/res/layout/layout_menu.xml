@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:background="@mipmap/a">
+        <ImageView
+            android:id="@+id/head_icon"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="90px"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/pic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="70px"
+            android:text="编辑个人资料"
+            android:layout_below="@+id/head_icon"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/head_icon"
+            android:layout_marginLeft="50px"
+            android:text="奶茶妹"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="96px"
+            android:src="@mipmap/sex" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20px"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv"
+        android:layout_below="@id/head"
+        ></ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/night"
+            android:id="@+id/night"
+            />
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="夜间模式"
+            android:layout_toRightOf="@id/night"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/b"
+            android:layout_alignParentRight="true"
+            />
+        <LinearLayout
+            android:layout_below="@id/tv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50px"
+            android:layout_marginTop="50px"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100px"
+                android:layout_weight="1"
+                android:layout_height="100px"
+                android:src="@mipmap/wenjian"
+                />
+            <ImageView
+                android:layout_width="100px"
+                android:layout_weight="1"
+                android:layout_height="100px"
+                android:src="@mipmap/shezhi"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
